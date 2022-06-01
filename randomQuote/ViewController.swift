@@ -39,17 +39,17 @@ class ViewController: UIViewController {
     func setQuote() {
         
         //fadeOut
-        
+        self.fadeOut()
         
         //getting data from API
         let dataService = DataService()
         dataService.getQuoteData {(quote, author) -> Void in
             
-            UIView.animate(withDuration: 0.5, animations: {
+            UIView.animate(withDuration: 1.5, animations: {
                 
                 //fadeIn and backgroundColor
-                self.quoteLabel.alpha = 1.0
-                self.authorLabel.alpha = 1.0
+                self.fadeIn()
+                self.view.backgroundColor = self.getRandomColor()
                 
                 //quote
                 self.quoteLabel.text = quote
