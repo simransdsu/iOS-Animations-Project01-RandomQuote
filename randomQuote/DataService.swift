@@ -15,7 +15,7 @@ class DataService {
     
     func getQuoteData(completion:@escaping (_ quote: String, _ author: String?) -> ()) {
         
-        let url = URL(string: "https://uselessfacts.jsph.pl/random.json")!
+        let url = URL(string: "https://uselessfacts.jsph.pl/random.json?language=en")!
         
         URLSession.shared.dataTask(with: url) { data, response, error in
             do {

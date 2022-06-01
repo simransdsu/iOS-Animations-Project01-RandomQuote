@@ -19,9 +19,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ea-EU-kDi">
-                                <rect key="frame" x="141" y="724" width="133" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ea-EU-kDi">
+                                <rect key="frame" x="40" y="732" width="334" height="30"/>
                                 <state key="normal" title="Random Quote">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -29,22 +28,31 @@
                                     <action selector="randomQuotePressedWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uqy-jL-hbp"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="author" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hmm-Q0-1Gx">
-                                <rect key="frame" x="93" y="358" width="229" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="author" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hmm-Q0-1Gx">
+                                <rect key="frame" x="40" y="198" width="334" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quote" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32e-a0-38c">
-                                <rect key="frame" x="38" y="235" width="321" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quote" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32e-a0-38c">
+                                <rect key="frame" x="38" y="144" width="321" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.66666668653488159" green="0.66666668653488159" blue="0.66666668653488159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="32e-a0-38c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="18" id="03L-Xr-RlJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Hmm-Q0-1Gx" secondAttribute="trailing" constant="20" id="CzQ-fD-Ztu"/>
+                            <constraint firstItem="Hmm-Q0-1Gx" firstAttribute="top" secondItem="32e-a0-38c" secondAttribute="bottom" constant="24" id="GCz-lR-T5b"/>
+                            <constraint firstItem="Hmm-Q0-1Gx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="Gvx-mw-vFl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7ea-EU-kDi" secondAttribute="trailing" constant="20" id="Qqk-lk-peA"/>
+                            <constraint firstItem="Q9U-7v-MiQ" firstAttribute="top" secondItem="7ea-EU-kDi" secondAttribute="bottom" constant="100" id="TMw-be-ZF5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="32e-a0-38c" secondAttribute="trailing" constant="35" id="aZi-zm-qbd"/>
+                            <constraint firstItem="32e-a0-38c" firstAttribute="top" secondItem="oAF-iK-ieq" secondAttribute="bottom" constant="100" id="kTa-in-nCY"/>
+                            <constraint firstItem="7ea-EU-kDi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="mhG-Rx-vJl"/>
+                        </constraints>
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>

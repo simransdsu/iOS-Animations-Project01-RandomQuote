@@ -48,17 +48,16 @@ class ViewController: UIViewController {
             UIView.animate(withDuration: 0.5, animations: {
                 
                 //fadeIn and backgroundColor
-                
+                self.quoteLabel.alpha = 1.0
+                self.authorLabel.alpha = 1.0
                 
                 //quote
+                self.quoteLabel.text = quote
                 
+                //author
+                self.authorLabel.text = author ?? "Unknown"
                 
-                //author - optional binding
-                
-                //if no author
-                
-                
-                }, completion:nil)
+            }, completion:nil)
             
             
         }
